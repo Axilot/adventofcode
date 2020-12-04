@@ -19,7 +19,7 @@ You simply clone the repository, head into the solution you want to see and run 
 ### Example:
 ```
 git clone https://github.com/Axilot/adventofcode.git
-cd Day_01
+cd adventofcode/Day_01
 rake release
 ./build/day1-1 < day1_input
 ```
