@@ -33,7 +33,6 @@ int main() {
 void saveNumbersFromFile(int numbers[]) {
     int currNumber[MAX_DIGITS]; /* Stores the current number in special format */
     int i, n, z, c;
-    int digit; /* Stores the multiplier for my number saving technique and the curren digit */
     
     /* Set some initial values */
     i = z = n = 0;
@@ -62,8 +61,7 @@ void saveNumbersFromFile(int numbers[]) {
         }
         else {
             if (c >= '0' && c <= '9') {
-                digit = c - '0';
-                currNumber[i] = digit;
+                currNumber[i] = c - '0';
                 i++;
             }
         }
