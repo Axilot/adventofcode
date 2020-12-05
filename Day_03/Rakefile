@@ -1,0 +1,32 @@
+task default: [:clean, :build]
+task release: [:clean, :releasebuild]
+
+CC = "clang"
+CFLAGS = "-ggdb3 -std=c99 -O0 -Werror"
+CFLAGSR = "-std=c99 -O2 -w"
+SRC1 = "day3-1.c"
+SRC2 = "day3-2.c"
+OUTF = "build"
+EXEC1 = "day3-1"
+EXEC2 = "day3-2"
+
+task :clean do
+    puts "Cleaning packages"
+    `rm -rf #{OUTF}`
+end
+
+task :build do
+    puts "Compiling source [DEBUG]"
+    `mkdir #{OUTF}`
+    `#{CC} #{SRC1} #{CFLAGS} -o #{OUTF}/#{EXEC1}`
+    `#{CC} #{SRC2} #{CFLAGS} -o #{OUTF}/#{EXEC2}`
+end
+
+task :releasebuild do
+    puts "Compiling source [RELEASE]"
+    `mkdir #{OUTF}`
+    `#{CC} #{SRC1} #{CFLAGSR} -o #{OUTF}/#{EXEC1}`
+    `#{CC} #{SRC2} #{CFLAGSR} -o #{OUTF}/#{EXEC2}`
+    `strip #{OUTF}/#{EXEC1}`
+    `strip #{OUTF}/#{EXEC2}`
+end
