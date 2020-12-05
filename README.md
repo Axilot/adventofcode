@@ -7,13 +7,14 @@ Hello Adventurer, this year's winter is very cold. But there is hope: Advent of 
 ### Current Status
 
 - [x] Day 1
-- [ ] Day 2
+- [x] Day 2
 - [ ] Day 3
 - [ ] Day 4
+- [ ] Day 5
 
 ## How do i compile the solutions?
 
-You simply clone the repository, head into the solution you want to see and run `rake`. After running `rake` you should have now have the executables. I included my inputs as a possibility to test the code. And please keep in mind, that this is my first github project, so please be kind with me :D
+You simply clone the repository, head into the solution you want to see and run `rake`. After running `rake` you should now have the executables. I included my inputs as a possibility to test the code. And please keep in mind, that this is my first github project, so please be kind with me :D
 
 
 ### Example:
