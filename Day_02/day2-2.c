@@ -2,7 +2,8 @@
 
 #define MAX_LENGTH 50
 
-int main() {
+int main()
+{
     int posa, posb, count;
     char c;
     char password[MAX_LENGTH];

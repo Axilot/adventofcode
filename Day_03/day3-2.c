@@ -7,7 +7,8 @@ void saveMap(char map[]);
 int calcXPos(int max, int num, int inc);
 int getTrees(char map[], int offset_x, int offset_y);
 
-int main() {
+int main()
+{
     char map[LINE_LENGTH * MAX_LINES];
 
     long sol1, sol2, sol3, sol4, sol5;
@@ -22,7 +23,8 @@ int main() {
     return 0;
 }
 
-int getTrees(char map[], int offset_x, int offset_y) {
+int getTrees(char map[], int offset_x, int offset_y)
+{
     int x = offset_x, y = offset_y;
     int cords = (y * LINE_LENGTH) + x;
     int count = 0;
@@ -39,7 +41,8 @@ int getTrees(char map[], int offset_x, int offset_y) {
     return count;
 }
 
-void saveMap(char map[]) {
+void saveMap(char map[])
+{
     int i;
     char c;
     i = 0;
@@ -54,7 +57,8 @@ void saveMap(char map[]) {
     map[i] = '\0';
 }
 
-int calcXPos(int max, int num, int inc) {
+int calcXPos(int max, int num, int inc)
+{
     if (num + inc > max) {
         int val = max - inc;
         num -= val+1;

@@ -6,7 +6,8 @@
 /* Save all numbers into array */
 void saveNumbersFromFile(int numbers[]);
 
-int main() {
+int main()
+{
     int numbers[MAX_NUMBERS];
     int i, n;
     for (i = 0; i < MAX_NUMBERS; i++) {
@@ -28,7 +29,8 @@ int main() {
     return 0;
 }
 
-void saveNumbersFromFile(int numbers[]) {
+void saveNumbersFromFile(int numbers[])
+{
     int currNumber[MAX_DIGITS]; /* Stores the current number in special format */
     int i, n, z, c;
     
