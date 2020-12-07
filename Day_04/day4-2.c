@@ -2,6 +2,8 @@
 #include <string.h>
 #include <ctype.h>
 
+#define MAX_SIZE 30000
+
 void saveData(char data[]);
 int checkPassports(char data[]);
 int isValid(char passport[]);
@@ -11,7 +13,7 @@ int isNineDigits(char id[]);
 int main()
 {
     /* Stores our input file */
-    char input[30000];
+    char input[MAX_SIZE];
     int validPasswords;
 
     saveData(input);
@@ -26,7 +28,7 @@ void saveData(char data[])
     int i;
     char c;
 
-    for (i = 0; (c = getchar()) != EOF; i++) {
+    for (i = 0; (c = getchar()) != EOF && i < MAX_SIZE; i++) {
         data[i] = c;
     }
     data[i] = '\0';
