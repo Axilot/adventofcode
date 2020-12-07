@@ -11,6 +11,8 @@ Hello Adventurer, this year's winter is very cold. But there is hope: Advent of 
 - [x] Day 3
 - [x] Day 4
 - [ ] Day 5
+- [ ] Day 6
+- [ ] Day 7
 
 ## How do i compile the solutions?
 
