@@ -24,8 +24,7 @@ int main()
 void saveData(char data[])
 {
     int i;
-    char c, isNewline;
-    isNewline = 0;
+    char c;
 
     for (i = 0; (c = getchar()) != EOF; i++) {
         data[i] = c;
