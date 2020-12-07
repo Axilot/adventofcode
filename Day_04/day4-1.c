@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
 void saveData(char data[]);
 int checkPassports(char data[]);
@@ -112,7 +111,7 @@ int isValid(char passport[])
         sscanf(strstr(passport, "cid:") + 4, "%d", &cid); 
         /* Not relevant */
     }
-    
+
     /* Check if it passed all requirements */
     if (checksum == 8) {
         return 1;
