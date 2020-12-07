@@ -58,7 +58,7 @@ int checkPassports(char data[])
         n++;
     }
     if (isValid(line)) {
-                count++;
+        count++;
     }
     return count;
 }

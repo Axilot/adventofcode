@@ -76,8 +76,6 @@ int isValid(char passport[])
 
     char checksum = 1;
 
-    int test;
-
     if (strstr(passport, "byr:") != NULL) {
         sscanf(strstr(passport, "byr:") + 4, "%d", &byr); 
         if (byr >= 1920 && byr <= 2002) {
