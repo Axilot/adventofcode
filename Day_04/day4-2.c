@@ -139,7 +139,8 @@ int isValid(char passport[])
     return 0;
 }
 
-int isHex(char hex[]) {
+int isHex(char hex[])
+{
     int i;
     if (hex[0] != '#') {
         return 0;
@@ -158,7 +159,8 @@ int isHex(char hex[]) {
     return 1;
 }
 
-int isNineDigits(char id[]) {
+int isNineDigits(char id[])
+{
     int i = 0;
 
     while (id[i] != '\0') {
