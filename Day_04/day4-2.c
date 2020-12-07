@@ -28,7 +28,7 @@ void saveData(char data[])
     int i;
     char c;
 
-    for (i = 0; (c = getchar()) != EOF && i < MAX_SIZE; i++) {
+    for (i = 0; (c = getchar()) != EOF && i < MAX_SIZE-1; i++) {
         data[i] = c;
     }
     data[i] = '\0';
