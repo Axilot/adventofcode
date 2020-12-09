@@ -30,7 +30,7 @@ int calcSeatID(char seat[])
     }
     min = 0;
     max = 7;
-    for (int i = 6; i < 10; i++) {
+    for (int i = 7; i < 10; i++) {
         if (seat[i] == 'R') {
             min = (max+1+min) / 2;
         }
