@@ -60,14 +60,14 @@ int getHighestNumber(int numbers[])
 void saveNumbers(int numbers[])
 {
     int num, i = 0;
-    char line[11];
+    char line[12];
     for (i = 0; i < MAX_LENGTH; i++) {
         numbers[i] = 0;
     }
 
     i = 0;
 
-    while (fgets(line, MAX_LENGTH, stdin) && i < MAX_LENGTH) {
+    while (fgets(line, 12, stdin) && i < MAX_LENGTH) {
         num = calcSeatID(line);
         numbers[i] = num;
         i++;
